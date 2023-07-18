@@ -1,0 +1,50 @@
+main {
+  background-color: #f8f8f8;
+}
+
+.imgHero {
+  width: 300px;
+}
+
+/* .textHero {
+  border-bottom: 3px solid yellow;
+} */
+main > section:nth-child(2) {
+  background-color: #060606;
+}
+
+main > section:nth-child(2) h2 {
+  font-weight: bold;
+  color: white;
+  padding-top: 80px;
+}
+
+.icons {
+  filter: invert(100%);
+  color: #fff;
+  opacity: 0.6;
+  width: 40px;
+}
+
+.bgCard {
+  background-color: #232323;
+  border-radius: 3%;
+}
+
+.buttonRoundedContainer {
+  background-color: #060606;
+  padding: 16px;
+  border-radius: 200px
+}
+
+.buttonRounded {
+  padding: 12px 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.buttonRounded:hover {
+  background-color: #fff;
+  color: #060606;
+  border-radius: 200px;
+}

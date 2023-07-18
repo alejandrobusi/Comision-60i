@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+}
+
+header > nav, main > div > nav {
+  border: 2px solid black;
+  transition: font-size 0.2s ease-in-out;
+}
+
+#imagenNavbarSegundo {
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navSegundo {
+  /* background-color: rgb(55, 195, 242); */
+  background: linear-gradient(247deg, rgba(4,109,190,1) 24%, rgba(2,131,224,1) 47%, rgba(0,151,255,1) 60%, rgba(44,255,0,1) 76%, rgba(150,0,255,1) 100%);
+}
+
+nav:hover {
+  background-color: bisque;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active {
+  font-size: 20px;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+nav > ul > a > li {
+  background: #a663cc;
+  display: inline-block;
+}
+
+.parrafo {
+  border: 3px solid black;
+}

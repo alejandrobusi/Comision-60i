@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.cabecera {
+  background-color: #faf255;
+  height: 70px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+.cabecera h3 {
+  margin: 0;
+  font-size: 2rem;
+  padding: 15px;
+}
+
+.marco {
+  position: relative;
+  width: 900px;
+  height: 700px;
+  background-color: aliceblue;
+  margin: 70px auto;
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.cabeza {
+  width: 150px;
+  height: 150px;
+  background-color: yellowgreen;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.ojoIzq {
+  position: absolute;
+  left: 15%;
+  background-color: red;
+  padding: 2px 6px;
+  margin-top: 10px;
+}
+
+.ojoDer {
+  position: absolute;
+  right: 15%;
+  background-color: red;
+  padding: 2px 6px;
+  margin-top: 10px;
+}
+
+.boca {
+  position: absolute;
+  bottom: 25%;
+  left: 30%;
+  background-color: goldenrod;
+}
+
+.cuerpo {
+  width: 250px;
+  height: 300px;
+  background-color: yellowgreen;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.brazoIzq {
+  background-color: yellowgreen;
+  width: 80px;
+  height: 250px;
+  position: relative;
+  top: -300px;
+  left: 26%;
+}
+
+.brazoDer {
+  background-color: yellowgreen;
+  width: 80px;
+  height: 250px;
+  position: relative;
+  top: -550px;
+  left: 585px;
+}
+
+.piernaDer {
+  background-color: yellowgreen;
+  width: 80px;
+  height: 250px;
+  position: relative;
+  top: -490px;
+  left: 50%;
+  transform: translate(40%);
+}
+
+.piernaIzq {
+  background-color: yellowgreen;
+  width: 80px;
+  height: 250px;
+  position: relative;
+  top: -740px;
+  left: 40%;
+  transform: translate(-30%);
+}
+

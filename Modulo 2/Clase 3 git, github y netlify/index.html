@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git, Github y Netlify</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Primer proyecto</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Acerca de nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Login
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container-fluid marginTopMain">
+      <div class="row text-center">
+        <div class="col-12 col-lg-10">
+          <section class="bg-success d-flex flex-column flex-lg-row">
+            <div class="col-12 col-lg-6">
+              <h1>Section 1</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                aliquid aut vitae hic unde modi consectetur animi tempora
+                voluptates, quas dolores? Tenetur unde, doloremque pariatur quae
+                velit ut ducimus consequatur? Eius, consectetur debitis! Quis,
+                natus sunt! Distinctio corporis ab tempore quia obcaecati.
+                Consequatur cum sint commodi officia odit, temporibus distinctio
+                iusto culpa beatae eligendi minima, accusantium voluptates
+                nostrum amet facere! Sapiente nihil eum minus! Reiciendis quo
+                officiis rerum quis saepe minima facere corporis consectetur
+                architecto in, aliquid accusamus laudantium praesentium
+                sapiente, maiores dolorem. Fugit deserunt amet eum odio minus
+                repudiandae. Iusto commodi aspernatur odit dolor eaque
+                reprehenderit fugit quod eum porro, velit numquam sequi
+                obcaecati corporis veritatis molestiae ratione blanditiis,
+                excepturi autem accusamus ipsa rem quos magnam quae neque.
+                Temporibus! Eum fugit magni impedit vitae natus molestias
+                provident neque aperiam at earum facilis, nam deserunt autem
+                laboriosam voluptates, assumenda eaque, ea ipsa in. Veniam
+                saepe, magnam sapiente consequatur quis vitae. Voluptas adipisci
+                distinctio temporibus cum quasi veritatis ipsum, quia totam!
+                Eaque illo consequuntur ex quae dolorem a adipisci in dolor
+                dolore exercitationem, cumque et reprehenderit dignissimos
+                mollitia odio. Repellendus, delectus.
+              </p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <h1>Section 1.1</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                aliquid aut vitae hic unde modi consectetur animi tempora
+                voluptates, quas dolores? Tenetur unde, doloremque pariatur quae
+                velit ut ducimus consequatur? Eius, consectetur debitis! Quis,
+                natus sunt! Distinctio corporis ab tempore quia obcaecati.
+                Consequatur cum sint commodi officia odit, temporibus distinctio
+                iusto culpa beatae eligendi minima, accusantium voluptates
+                nostrum amet facere! Sapiente nihil eum minus! Reiciendis quo
+                officiis rerum quis saepe minima facere corporis consectetur
+                architecto in, aliquid accusamus laudantium praesentium
+                sapiente, maiores dolorem. Fugit deserunt amet eum odio minus
+                repudiandae. Iusto commodi aspernatur odit dolor eaque
+                reprehenderit fugit quod eum porro, velit numquam sequi
+                obcaecati corporis veritatis molestiae ratione blanditiis,
+                excepturi autem accusamus ipsa rem quos magnam quae neque.
+                Temporibus! Eum fugit magni impedit vitae natus molestias
+                provident neque aperiam at earum facilis, nam deserunt autem
+                laboriosam voluptates, assumenda eaque, ea ipsa in. Veniam
+                saepe, magnam sapiente consequatur quis vitae. Voluptas adipisci
+                distinctio temporibus cum quasi veritatis ipsum, quia totam!
+                Eaque illo consequuntur ex quae dolorem a adipisci in dolor
+                dolore exercitationem, cumque et reprehenderit dignissimos
+                mollitia odio. Repellendus, delectus.
+              </p>
+            </div>
+          </section>
+          <section class="bg-danger">
+            <h1>Section 2</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              aliquid aut vitae hic unde modi consectetur animi tempora
+              voluptates, quas dolores? Tenetur unde, doloremque pariatur quae
+              velit ut ducimus consequatur? Eius, consectetur debitis! Quis,
+              natus sunt! Distinctio corporis ab tempore quia obcaecati.
+              Consequatur cum sint commodi officia odit, temporibus distinctio
+              iusto culpa beatae eligendi minima, accusantium voluptates nostrum
+              amet facere! Sapiente nihil eum minus! Reiciendis quo officiis
+              rerum quis saepe minima facere corporis consectetur architecto in,
+              aliquid accusamus laudantium praesentium sapiente, maiores
+              dolorem. Fugit deserunt amet eum odio minus repudiandae. Iusto
+              commodi aspernatur odit dolor eaque reprehenderit fugit quod eum
+              porro, velit numquam sequi obcaecati corporis veritatis molestiae
+              ratione blanditiis, excepturi autem accusamus ipsa rem quos magnam
+              quae neque. Temporibus! Eum fugit magni impedit vitae natus
+              molestias provident neque aperiam at earum facilis, nam deserunt
+              autem laboriosam voluptates, assumenda eaque, ea ipsa in. Veniam
+              saepe, magnam sapiente consequatur quis vitae. Voluptas adipisci
+              distinctio temporibus cum quasi veritatis ipsum, quia totam! Eaque
+              illo consequuntur ex quae dolorem a adipisci in dolor dolore
+              exercitationem, cumque et reprehenderit dignissimos mollitia odio.
+              Repellendus, delectus.
+            </p>
+          </section>
+          <section class="bg-primary">
+            <h1>Section 3</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              aliquid aut vitae hic unde modi consectetur animi tempora
+              voluptates, quas dolores? Tenetur unde, doloremque pariatur quae
+              velit ut ducimus consequatur? Eius, consectetur debitis! Quis,
+              natus sunt! Distinctio corporis ab tempore quia obcaecati.
+              Consequatur cum sint commodi officia odit, temporibus distinctio
+              iusto culpa beatae eligendi minima, accusantium voluptates nostrum
+              amet facere! Sapiente nihil eum minus! Reiciendis quo officiis
+              rerum quis saepe minima facere corporis consectetur architecto in,
+              aliquid accusamus laudantium praesentium sapiente, maiores
+              dolorem. Fugit deserunt amet eum odio minus repudiandae. Iusto
+              commodi aspernatur odit dolor eaque reprehenderit fugit quod eum
+              porro, velit numquam sequi obcaecati corporis veritatis molestiae
+              ratione blanditiis, excepturi autem accusamus ipsa rem quos magnam
+              quae neque. Temporibus! Eum fugit magni impedit vitae natus
+              molestias provident neque aperiam at earum facilis, nam deserunt
+              autem laboriosam voluptates, assumenda eaque, ea ipsa in. Veniam
+              saepe, magnam sapiente consequatur quis vitae. Voluptas adipisci
+              distinctio temporibus cum quasi veritatis ipsum, quia totam! Eaque
+              illo consequuntur ex quae dolorem a adipisci in dolor dolore
+              exercitationem, cumque et reprehenderit dignissimos mollitia odio.
+              Repellendus, delectus.
+            </p>
+          </section>
+          <section class="bg-success d-flex flex-column flex-lg-row">
+            <div class="col-12 col-lg-6">
+              <h1>Section 1</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                aliquid aut vitae hic unde modi consectetur animi tempora
+                voluptates, quas dolores? Tenetur unde, doloremque pariatur quae
+                velit ut ducimus consequatur? Eius, consectetur debitis! Quis,
+                natus sunt! Distinctio corporis ab tempore quia obcaecati.
+                Consequatur cum sint commodi officia odit, temporibus distinctio
+                iusto culpa beatae eligendi minima, accusantium voluptates
+                nostrum amet facere! Sapiente nihil eum minus! Reiciendis quo
+                officiis rerum quis saepe minima facere corporis consectetur
+                architecto in, aliquid accusamus laudantium praesentium
+                sapiente, maiores dolorem. Fugit deserunt amet eum odio minus
+                repudiandae. Iusto commodi aspernatur odit dolor eaque
+                reprehenderit fugit quod eum porro, velit numquam sequi
+                obcaecati corporis veritatis molestiae ratione blanditiis,
+                excepturi autem accusamus ipsa rem quos magnam quae neque.
+                Temporibus! Eum fugit magni impedit vitae natus molestias
+                provident neque aperiam at earum facilis, nam deserunt autem
+                laboriosam voluptates, assumenda eaque, ea ipsa in. Veniam
+                saepe, magnam sapiente consequatur quis vitae. Voluptas adipisci
+                distinctio temporibus cum quasi veritatis ipsum, quia totam!
+                Eaque illo consequuntur ex quae dolorem a adipisci in dolor
+                dolore exercitationem, cumque et reprehenderit dignissimos
+                mollitia odio. Repellendus, delectus.
+              </p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <h1>Section 1.1</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                aliquid aut vitae hic unde modi consectetur animi tempora
+                voluptates, quas dolores? Tenetur unde, doloremque pariatur quae
+                velit ut ducimus consequatur? Eius, consectetur debitis! Quis,
+                natus sunt! Distinctio corporis ab tempore quia obcaecati.
+                Consequatur cum sint commodi officia odit, temporibus distinctio
+                iusto culpa beatae eligendi minima, accusantium voluptates
+                nostrum amet facere! Sapiente nihil eum minus! Reiciendis quo
+                officiis rerum quis saepe minima facere corporis consectetur
+                architecto in, aliquid accusamus laudantium praesentium
+                sapiente, maiores dolorem. Fugit deserunt amet eum odio minus
+                repudiandae. Iusto commodi aspernatur odit dolor eaque
+                reprehenderit fugit quod eum porro, velit numquam sequi
+                obcaecati corporis veritatis molestiae ratione blanditiis,
+                excepturi autem accusamus ipsa rem quos magnam quae neque.
+                Temporibus! Eum fugit magni impedit vitae natus molestias
+                provident neque aperiam at earum facilis, nam deserunt autem
+                laboriosam voluptates, assumenda eaque, ea ipsa in. Veniam
+                saepe, magnam sapiente consequatur quis vitae. Voluptas adipisci
+                distinctio temporibus cum quasi veritatis ipsum, quia totam!
+                Eaque illo consequuntur ex quae dolorem a adipisci in dolor
+                dolore exercitationem, cumque et reprehenderit dignissimos
+                mollitia odio. Repellendus, delectus.
+              </p>
+            </div>
+          </section>
+          <section class="bg-danger">
+            <h1>Section 2</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              aliquid aut vitae hic unde modi consectetur animi tempora
+              voluptates, quas dolores? Tenetur unde, doloremque pariatur quae
+              velit ut ducimus consequatur? Eius, consectetur debitis! Quis,
+              natus sunt! Distinctio corporis ab tempore quia obcaecati.
+              Consequatur cum sint commodi officia odit, temporibus distinctio
+              iusto culpa beatae eligendi minima, accusantium voluptates nostrum
+              amet facere! Sapiente nihil eum minus! Reiciendis quo officiis
+              rerum quis saepe minima facere corporis consectetur architecto in,
+              aliquid accusamus laudantium praesentium sapiente, maiores
+              dolorem. Fugit deserunt amet eum odio minus repudiandae. Iusto
+              commodi aspernatur odit dolor eaque reprehenderit fugit quod eum
+              porro, velit numquam sequi obcaecati corporis veritatis molestiae
+              ratione blanditiis, excepturi autem accusamus ipsa rem quos magnam
+              quae neque. Temporibus! Eum fugit magni impedit vitae natus
+              molestias provident neque aperiam at earum facilis, nam deserunt
+              autem laboriosam voluptates, assumenda eaque, ea ipsa in. Veniam
+              saepe, magnam sapiente consequatur quis vitae. Voluptas adipisci
+              distinctio temporibus cum quasi veritatis ipsum, quia totam! Eaque
+              illo consequuntur ex quae dolorem a adipisci in dolor dolore
+              exercitationem, cumque et reprehenderit dignissimos mollitia odio.
+              Repellendus, delectus.
+            </p>
+          </section>
+          <section class="bg-primary">
+            <h1>Section 3</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              aliquid aut vitae hic unde modi consectetur animi tempora
+              voluptates, quas dolores? Tenetur unde, doloremque pariatur quae
+              velit ut ducimus consequatur? Eius, consectetur debitis! Quis,
+              natus sunt! Distinctio corporis ab tempore quia obcaecati.
+              Consequatur cum sint commodi officia odit, temporibus distinctio
+              iusto culpa beatae eligendi minima, accusantium voluptates nostrum
+              amet facere! Sapiente nihil eum minus! Reiciendis quo officiis
+              rerum quis saepe minima facere corporis consectetur architecto in,
+              aliquid accusamus laudantium praesentium sapiente, maiores
+              dolorem. Fugit deserunt amet eum odio minus repudiandae. Iusto
+              commodi aspernatur odit dolor eaque reprehenderit fugit quod eum
+              porro, velit numquam sequi obcaecati corporis veritatis molestiae
+              ratione blanditiis, excepturi autem accusamus ipsa rem quos magnam
+              quae neque. Temporibus! Eum fugit magni impedit vitae natus
+              molestias provident neque aperiam at earum facilis, nam deserunt
+              autem laboriosam voluptates, assumenda eaque, ea ipsa in. Veniam
+              saepe, magnam sapiente consequatur quis vitae. Voluptas adipisci
+              distinctio temporibus cum quasi veritatis ipsum, quia totam! Eaque
+              illo consequuntur ex quae dolorem a adipisci in dolor dolore
+              exercitationem, cumque et reprehenderit dignissimos mollitia odio.
+              Repellendus, delectus.
+            </p>
+          </section>
+        </div>
+        <div class="col-12 col-lg-2 d-none d-lg-block">
+          <section class="bg-warning">
+            <h3>Publicidad</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              quam, doloremque perspiciatis, fugit laudantium facilis magni esse
+              velit adipisci eveniet a sit quas amet repellendus! Eum iusto
+              quisquam reprehenderit harum. Perspiciatis unde accusantium
+              commodi, vitae doloremque nihil tenetur id numquam laborum
+              inventore reiciendis cupiditate corrupti ipsam similique, facilis
+              expedita! Hic nesciunt laborum nihil tenetur ipsa libero veritatis
+              aperiam ullam id. Esse praesentium rem, qui dolore nulla odio
+              molestiae pariatur ea repellat nam magnam earum nihil animi
+              aliquid quam maxime voluptatem facere tenetur obcaecati asperiores
+              expedita porro labore minima ullam. Eligendi. Aliquid excepturi
+              numquam sequi est esse laudantium alias fuga rerum. Blanditiis
+              asperiores atque quaerat debitis autem cumque quia, consectetur
+              repudiandae, nam voluptates enim magni dicta sunt esse. Eius,
+              explicabo odit!
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid text-center bg-dark text-white">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ea
+            explicabo magni? Omnis aut voluptatem exercitationem neque
+            doloribus, fugiat ab ea praesentium placeat rerum quis atque maxime
+            voluptatum odio quasi? Non voluptate magnam voluptatibus delectus.
+            Fugit, nesciunt! Esse, pariatur eligendi tenetur eveniet omnis vero
+            consequuntur libero voluptatibus eius cumque accusamus quia dolorem
+            atque commodi consequatur deserunt ex itaque eos nihil!
+          </p>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h1>Footer</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ea
+            explicabo magni? Omnis aut voluptatem exercitationem neque
+            doloribus, fugiat ab ea praesentium placeat rerum quis atque maxime
+            voluptatum odio quasi? Non voluptate magnam voluptatibus delectus.
+            Fugit, nesciunt! Esse, pariatur eligendi tenetur eveniet omnis vero
+            consequuntur libero voluptatibus eius cumque accusamus quia dolorem
+            atque commodi consequatur deserunt ex itaque eos nihil!
+          </p>
+        </div>
+        <div class="col-12 col-lg-4">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ea
+            explicabo magni? Omnis aut voluptatem exercitationem neque
+            doloribus, fugiat ab ea praesentium placeat rerum quis atque maxime
+            voluptatum odio quasi? Non voluptate magnam voluptatibus delectus.
+            Fugit, nesciunt! Esse, pariatur eligendi tenetur eveniet omnis vero
+            consequuntur libero voluptatibus eius cumque accusamus quia dolorem
+            atque commodi consequatur deserunt ex itaque eos nihil!
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* div {
+  width: 150px;
+  height: 150px;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
+/* @media only screen and (min-width: 350px) {
+  div {
+    background-color: blue;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  div {
+    background-color: cadetblue;
+  }
+} */
+
+
+/* Esta media query es para celulaar */
+/* @media only screen and (min-width: 390px) and (max-width: 767px) {
+  div {
+    background-color: springgreen;
+  }
+}
+
+/* Esta media query es para tablet */
+/* @media only screen and (min-width: 768px) and (max-width: 991px) {
+  div {
+    background-color: rgb(17, 0, 255);
+  }
+} */
+
+/* Esta media query es para pc en adelante */
+/* @media only screen and (min-width: 992px) and (max-width: 2100px) {
+  div {
+    background-color: rgb(255, 217, 0);
+  }
+} */
+
+.cardContainer {
+  display: flex;
+  justify-content: space-around;
+}

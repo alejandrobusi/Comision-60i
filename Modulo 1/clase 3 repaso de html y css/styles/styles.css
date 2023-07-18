@@ -1,0 +1,42 @@
+h3 {
+  color: red;
+}
+
+#primerArticulo {
+  background-color: violet;
+}
+
+main > section > ol > li {
+  color: blue;
+  list-style: none;
+  font-size: 40px;
+}
+
+.textColorContainer > p {
+  color: teal;
+  font-size: 25px;
+}
+
+h3:hover {
+  font-size: 25px;
+}
+
+h3:active {
+  color: rgb(42, 63, 165)
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color:black
+}
+
+a:visited {
+  color: red;
+}
+
+.styleList {
+  list-style: none;
+}
