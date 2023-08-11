@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso dom y bom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <button id="loginButton" class="btn btn-dark">Login</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- <h1>Hola</h1>
+      <h1 id="theH1">Adios</h1>
+      <p class="theP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit reiciendis rerum placeat, modi eos quaerat, aperiam ea temporibus velit itaque. Ducimus odit quae neque explicabo recusandae provident dolorum accusantium.</p>
+      <button class="btn btn-dark m-5" onclick="stopInterval()">Stop int</button>
+      <div class="mb-3">
+        <label for="numberUser" class="form-label">Email address</label>
+        <input type="number" class="form-control" id="numberUser" aria-describedby="emailHelp">
+      </div> -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <h1>ejercicio 1</h1>
+          <div class="mb-3 col-5">
+            <label for="inputUser" class="form-label">Ingresa un nunmero del 1 al 10</label>
+            <input type="number" class="form-control" id="inputUser" >
+            <button class="btn btn-dark my-3" onclick="startGame()">Jugar</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-5">
+            <label for="task" class="form-label">Ingresa una tarea</label>
+            <input type="text" class="form-control" id="task" >
+            <button class="btn btn-dark my-3" onclick="addTask()">Agregar</button>
+          </div>
+          <div id="containerList">
+            <ol id="taskListElement">
+
+            </ol>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <div id="containerP">
+
+    </div>
+    <img id="imagen" src="https://1.bp.blogspot.com/-828NEi8T3XM/YJmahKSJYYI/AAAAAAAAIfw/lOtN4RiTJJwO-qNwxqbXuFpcS5t8Te71QCLcBGAsYHQ/s320/864.jpg" alt=""> -->
+    <footer>
+
+    </footer>
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
