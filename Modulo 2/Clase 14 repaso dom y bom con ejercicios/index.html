@@ -54,16 +54,37 @@
         </div>
       </div>
       <div class="container">
+        <h1>ejercicio 2</h1>
         <div class="row justify-content-center">
           <div class="col-5">
             <label for="task" class="form-label">Ingresa una tarea</label>
             <input type="text" class="form-control" id="task" >
             <button class="btn btn-dark my-3" onclick="addTask()">Agregar</button>
           </div>
-          <div id="containerList">
+        </div>
+        <div class="row justify-content-center">
+          <div id="containerList" class="col-5">
             <ol id="taskListElement">
-
+  
             </ol>
+          </div>
+        </div>
+      </div>
+      <!-- editTask modal -->
+      <div class="modal fade" id="editTask" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Editar tarea</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label for="task" class="form-label">Nuevo valor de la tarea</label>
+              <input type="text" class="form-control" id="newTask" >
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="editTask()">Guardar</button>
+            </div>
           </div>
         </div>
       </div>

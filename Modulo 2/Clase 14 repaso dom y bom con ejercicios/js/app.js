@@ -68,6 +68,7 @@ const startGame = () => {
  */
 
 let tastList = [];
+let auxIndex;
 
 const addTask = () => {
   const newTask = document.getElementById('task').value;
@@ -75,22 +76,35 @@ const addTask = () => {
     return alert('No ingresaste nada');
   }
   tastList.push(newTask);
-  printListTaskToDocumet(tastList);
+  printListTaskAndOptionsToDocumet(tastList);
 };
 
-const printListTaskToDocumet = (list) => {
+const printListTaskAndOptionsToDocumet = (list) => {
   let listToDelete = document.getElementById('taskListElement');
   listToDelete.innerHTML = '';
   if (list.length !== 0) {
     list.map((task, i) => {
       const li = document.createElement('li');
-      li.innerHTML = `<div class="d-flex my-2 justify-content-between">${task} <button onclick="deleteItemOfList(${i})" class="btn btn-danger btn-sm">Elimiar</button></div>`;
+      li.innerHTML = `<div class="d-flex my-2 justify-content-between">${task} <div><button type="button" class="btn btn-primary btn-sm" onclick="saveIndexAux(${i})" data-bs-toggle="modal" data-bs-target="#editTask">
+        Editar
+        </button> <button onclick="deleteItemOfList(${i})" class="btn btn-danger btn-sm">Elimiar</button></div></div>`;
       document.getElementById('taskListElement').appendChild(li);
     });
   }
 };
 
+const saveIndexAux = (i) => (auxIndex = i);
+
 const deleteItemOfList = (index) => {
   tastList.splice(index, 1);
-  printListTaskToDocumet(tastList);
+  printListTaskAndOptionsToDocumet(tastList);
+};
+
+const editTask = () => {
+  const userInput = document.getElementById('newTask').value;
+  if (userInput.length === 0) {
+    return alert('No ingresaste nada');
+  }
+  tastList[auxIndex] = userInput;
+  printListTaskAndOptionsToDocumet(tastList);
 };
